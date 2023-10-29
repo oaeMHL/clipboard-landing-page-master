@@ -1,0 +1,253 @@
+/* global */
+:root {
+    --primary-strong-cyan: hsl(171, 66%, 44%);
+    --primary-light-blue: hsl(233, 100%, 69%);
+    --neutral-dark-grayish-blue: hsl(210, 10%, 33%);
+    --primary-grayish-blue: hsl(201, 11%, 66%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: 170px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+}
+
+.btn{
+    display: block;
+}
+
+.btn button{
+    margin: 5px;
+}
+
+.ios {
+    background-color: var(--primary-strong-cyan);
+}
+
+.os {
+    background-color: var(--primary-light-blue);
+}
+
+.responsive {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+}
+
+.responsive-icon {
+    width: 100%;
+    min-width: 40px;
+    max-width: 40px;
+     height: auto;
+}
+
+.responsive-logo {
+    width: 100px;
+}
+
+.responsive-partner {
+    width: 175px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+h2 {
+    margin-top: 130px;
+    font-size: 2.3rem;
+}
+
+
+p {
+    color: var(--neutral-dark-grayish-blue);
+}
+
+
+/* header start */
+.header {
+    display: flex;
+    width: 100%;
+    background: linear-gradient(to bottom, transparent, white), url(/assets/images/bg-header-desktop.png)  ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+    align-items: center;
+    justify-content: center;
+}
+/* header end */
+
+/* main start */
+main {
+    display: block;
+    margin: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.track-snip {
+    display: flex;
+    margin-top: 100px;
+    text-align: left;
+    align-items: center;
+}
+
+.track-snip img{
+    position: relative;
+    right: 4.1vw;
+    max-width: 750px;
+}
+
+.tracks {
+    position: relative;
+}
+
+.track-1, .track-2 {
+    margin-bottom: 50px;
+}
+
+.txt-access {
+    margin-bottom: 100px;
+}
+
+.access img {
+    width: 100%;
+}
+
+
+.workflow h2{
+    margin: 30px 0 0 0;
+}
+
+.wrapper-wfs{
+    display: flex;
+}
+
+.wf-1, .wf-2, .wf-3 {
+    margin: 50px;
+}
+
+.partner {
+    margin-top: 100px;
+}
+
+.partner img {
+    margin: 50px;
+}
+
+/* main end */
+
+/* footer start */
+footer {
+    background-color: hsla(202, 11%, 66%, 0.158);
+    margin: 0 auto;
+    padding: 50px 0 25px 0;
+}
+
+.secondary-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 50px 0;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--neutral-dark-grayish-blue);
+    margin: 25px 50px;
+}
+
+/* footer end */
+
+/* copyright */ 
+.copyright {
+    background-color: var(--primary-grayish-blue);
+    color: white;
+    padding: 3px;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    color: white;
+}
+
+.attribution a {
+    color:white; 
+}
+
+/* media queries */
+@media (max-width:1440px) {
+    .track-snip img{
+        position: relative;
+        right: 4.5vw;
+        max-width: 750px;
+    }
+}
+
+@media (max-width:1120px) {
+    .track-snip img{
+        right: auto;
+        margin: 0;
+    }
+    .track-snip {
+        display: flex;
+        margin-top: 100px;
+        text-align: left;
+        align-items: center;
+        flex-direction: column;
+        text-align: inherit;
+    } 
+    .track-snip img{
+        position: none;
+        right: auto;
+        margin-bottom: 50px;
+        max-width: 650px;
+    }
+}
+
+@media (max-width: 950px) {
+    .wrapper-wfs{
+        display: block;
+    }
+    ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    li {
+        margin: 15px 0;
+    }
+    footer {
+        padding:25px;
+    }
+}
+
+@media (max-width:380px) {
+    main {
+        margin: 20px;
+    }
+}
